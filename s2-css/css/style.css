@@ -1,85 +1,30 @@
-* {
-    color: red;
-}
 
 header {
-    background-color: cyan;
+    background-color: red;
+    border: 2px solid black;
+    width: 50%;
 }
 
-nav {
-    background-color: orange;
+
+/* .intro-header nav {
+    background-color: pink;
+} */
+
+.header.intro-header nav {
+    background-color: pink;
 }
 
-header h1{
-    color: purple;
+.intro-header nav h2 {
+    color: white;
 }
 
-article {
-    background-color: cyan;
-}
-
-.container-post {
-    border: 1px solid black;
+.intro-header {
     border-radius: 10px;
-    background-color: blue;
 }
 
 .container-post {
-    background-color: red;
-}
-
-.container-post {
-    background-color: pink;
-}
-#post-unique {
-    background-color: black;
-}
-
-#post {
-    background-color: black;
-}
-
-.parrafo {
-    font-size: 25px;
-}
-/* Selector descendiente */
-/* Selecciona todos span que se encuentren dentro 
-    de un elemento que tenga la clase .parrafo 
-*/
-.parrafo span {
-    color: black;
-}
-
-
-/* 
-Los elementos de linea son aquellos elementos que
-abarcan el espacio en base a su contenido.
-OJO: Ah este elemento no se le puede aplicar height y width
-*/
-.element-change-to-inline {
-    background-color: red;
-    color: white;
-    display: inline;
-}
-
-/* 
-Los elementos de block son aquellos elementos que
-abarcan todo el espacio de su contenedor padre.
-A estos elementos se le PUEDEN aplicar las propiedades
-height y width
-*/
-.element-change-to-block {
-    background-color: blue;
-    color: white;
-    display: block
-}
-
-/* 
-Los elementos de tipo inline-block son aquellos elementos
-que compartiran las caracterisiticas de un elemento inline y block
-*/
-.element-inline-block {
-    background-color: pink;
-    display: inline-block;
-    width: 20%;
+    border: 2px dashed blue;
+    width: 100px;
+    height: 100px;
+    margin: 10px 0 10px 0;
 }

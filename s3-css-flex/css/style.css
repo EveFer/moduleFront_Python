@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.header {
+    background-color: blue;
+    border: 2px solid red;
+    border-radius: 5px;;
+}
+
+
+.header nav {
+    background-color: orange;
+    border: 2px solid green;
+    border-radius: 5px;
+}
+
+aside {
+    border: 1px solid orange;
+    border-radius: 5px;
+    width: 20%;
+    background-color: red;
+    display: inline-block;
+    margin-left: -3px;
+    vertical-align: top;
+}
+
+main {
+    background-color: red;
+    border: 1px solid orange;
+    width: 60%;
+    display: inline-block;
+    margin-left: -3px;
+}
+
+footer {
+    background-color: purple;
+    color: #fff;
+}
+
+/*  */
+
+.flex-container {
+    border: 1px solid red;
+    margin: 20px 0;
+    height: 150px;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-flex-start {
+    justify-content: flex-start;
+}
+
+.justify-content-flex-end {
+    justify-content: flex-end;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.justify-content-evenly{
+    justify-content: space-evenly;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.align-items-baseline {
+    align-items: baseline;
+}
+
+.align-items-stretch {
+    align-items: stretch;
+}
+
+/* .flex-item {
+    width: 50px;
+    height: 50px;
+} */
+
+.flex-item:nth-of-type(even) {
+    background-color: orange;
+}
+
+.flex-item:nth-of-type(odd) {
+    background-color: pink;
+}
+
