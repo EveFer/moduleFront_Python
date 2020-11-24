@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans';
+}
+
+/* a {
+    text-decoration: none;
+} */
+
+/* selector combinado */
+/* nav.header-menu {
+
+} */
+
+.container {
+    max-width: 1149px;
+    margin: 0 auto;
+}
+
+header.header {
+    background-color: #f9fff2;
+    background-image: url('../assets/images/MaskGroup.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* selector descendiente */
+header.header .header-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+header.header .header-menu ul {
+    list-style: none;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.header .header-menu ul li a {
+    text-decoration: none;
+}
+
+header.header .header-introduction {
+    padding: 55px 0;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.wrapper-cards {
+    display: flex;
+}
+
+.card {
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.card ul li {
+    list-style: none;
+}
+
+.card .card-description-plan {
+    font-size: 13px;
+    color: gray;
+}
+
+.card button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px 0;
+    background-color: #4110f7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* Selector de hijo */
+.menu-principal > ul {
+    background-color: pink
+}
+/* Selector subsecuente */
+.aside + article {
+    background-color: purple;
+    color: white;
+}
+/* selector de hermano */
+.aside ~ article {
+    background-color: red;
+}
+
+
+/* Pseudoclases */
+
+/* .aside ~ article:hover {
+    background-color: pink;
+    border: 2px dashed purple;
+} */
+/* 
+
+
+*/
+
+.article-hover {
+    margin: 20px;
+}
+
+.article-hover:hover p {
+    background-color: rgba(26, 255, 0, 0.546);
+    color: white;
+}
+
+.article-hover:hover + p {
+    background-color: purple;
+    color: white;
+}
+
+/* 
+:active
+:focus
+:checked
+:link -> enlaces
+:visited
+
+:first-of-type
+:last-of-type
+:nth-of-type()
+*/
+/* an+b */
+.ul-target li:nth-of-type(2n + 4) {
+    background-color: gray;
+}
+
