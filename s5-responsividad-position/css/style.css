@@ -127,3 +127,44 @@ ul li {
         text-align: center;
     }
 }
+
+
+/* Positions */
+.positions {
+    height: 100vh;
+}
+
+.container {
+    width: 60%;
+    height: 400px;
+    margin: 50px auto;
+    border: 1px solid red;
+    position: relative;
+}
+
+.article {
+    width: 70%;
+    height: 200px;
+    /* margin: 0 auto; */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* position: absolute;
+    top: 20px;
+    left: 200px; */
+    position: fixed;
+    top: 20px;
+    left: 100px;
+}
+
+.nav {
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: sticky;
+    top: 20px;
+    height: 50vh; /* viewport height */
+    width: 50vw; /* viewport width */
+}
+
+.position-practice {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+}
