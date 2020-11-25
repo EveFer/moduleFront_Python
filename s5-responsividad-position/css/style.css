@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos mobile - 320px - 767px  */
+
+.flex-box {
+    background-color: rgba(0,0,0, 0.5);
+    height: 100vh; /*veiwport height*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.shape {
+    width: 200px;
+    height: 200px;
+}
+
+.shape:first-of-type {
+    background-color: pink;
+}
+.shape:nth-of-type(2) {
+    background-color: blue;
+}
+.shape:last-of-type {
+    background-color: red;
+}
+
+
+/* max-width: 768px 320pz  768px  */
+/* min-width: 768px | 768px  --> hasta breakpoint */
+@media only screen and (min-width: 768px) {
+    .flex-box {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .shape{
+        width: 300px;
+        margin: 20px;
+    }
+}
+/* min-width: 1024px | 1024px  --> hasta breakpoint */
+@media only screen and (min-width: 1024px) {
+    .flex-box {
+        flex-wrap: no-wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .shape {
+        height: 300px;
+        border-radius: 50%;
+        margin: unset;
+    }
+}
+
+
+/* Section menu */
+
+.section-menu {
+    height: 100vh;
+}
+
+ul li {
+    list-style: none;
+}
+
+.menu {
+    background-color: steelblue;
+    /* display: none; */
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.menu ul li:not(:last-of-type) {
+    border-bottom: 1px solid red;;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px;
+}
+
+.menu ul li a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#checked-menu {
+    display: none;
+} 
+
+#checked-menu:checked ~ .menu {
+    /* display: block; */
+    height: auto;
+    opacity: 1;
+}
+
+.icon-bar {
+    font-size: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+    .menu {
+        opacity: 1;
+        height: auto;
+    }
+    .icon-bar {
+        display: none;
+    }
+    .menu ul{
+        display: flex;
+    }
+
+    .menu ul li {
+        border-right: 1px solid red;
+        flex-grow: 1;
+        text-align: center;
+    }
+}
