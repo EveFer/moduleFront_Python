@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section {
+  border: 1px solid #ccc;
+  height: 200px;
+}
+
+.section .form-login {
+  border: 1px solid #ccc;
+  padding: 20px;
+  -webkit-box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.6);
+  width: 40%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section .form-login.form-new {
+  background-color: gray;
+}
+
+.section .form-login input {
+  height: 25px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+  margin: 10px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .section .form-login input {
+    display: none;
+  }
+}
+
+.section .form-login .btn {
+  height: 25px;
+  border: none;
+  background-color: rgba(0, 0, 255, 0.347);
+  color: #ffffff;
+  border-radius: 50px;
+}
+
+.section .form-login .btn:hover {
+  background-color: red;
+  color: #ffffff;
+}
+
+.other-btn {
+  height: 25px;
+  border: none;
+  background-color: rgba(0, 0, 255, 0.772);
+  color: #ffffff;
+  border-radius: 50px;
+}
+
+.other-btn:hover {
+  background-color: red;
+  color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */

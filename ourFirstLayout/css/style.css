@@ -25,7 +25,7 @@ body {
 header.header {
     background-color: #f9fff2;
     background-image: url('../assets/images/MaskGroup.png');
-    background-position: center;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -49,39 +49,108 @@ header.header .header-menu ul li a {
 }
 
 header.header .header-introduction {
-    padding: 55px 0;
+    padding: 117px 0;
     width: 60%;
     text-align: center;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 
+header.header .header-introduction p span {
+    color: #32BBA4;
+    font-weight: bold;
+}
+
+header.header .header-introduction .wrapper-video {
+    position: relative;
+}
+
+header.header .header-introduction .wrapper-video .mockup {
+    /* box-shadow: 5px 5px 4px rgba(36, 34, 34, 0.5); */
+    filter: drop-shadow(5px 5px 4px rgba(36, 34, 34, 0.5));
+}
+
+header.header .header-introduction .wrapper-video .video {
+    position: absolute;
+    top: 18px;
+    left: 10px;
+}
 
 .wrapper-cards {
     display: flex;
 }
 
-.card {
-    padding: 15px;
+section {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
+}
+
+section article.card {
     border: 1px solid #ccc;
+    padding: 50px;
+    border-radius: 8px;
 }
 
-.card ul li {
-    list-style: none;
+section article.card h2.card-title-plan {
+    font-style: normal;
+    font-weight: normal;
 }
 
-.card .card-description-plan {
-    font-size: 13px;
-    color: gray;
+section article.card h3.card-price-plan {
+    font-size: 30px;
+    margin: 30px 0 15px 0;
 }
 
-.card button {
-    width: 100%;
-    margin: 10px 0;
-    padding: 5px 0;
-    background-color: #4110f7;
-    color: white;
+section article.card p.card-description-plan {
+    margin-bottom: 10px;
+}
+
+section article.card button {
+    background-color: #410FF8;
+    color: #fff;
+    width:100%;
+    padding: 15px;
+    font-size: 20px;
     border: none;
+    margin-bottom: 40px;
     border-radius: 5px;
+}
+
+section article.card ul {
+    padding: 0;
+}
+
+section article.card li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+section article.card li i {
+    color: purple;
+    margin-right: 10px;
+}
+
+.bx-shadow {
+    box-shadow: 0px -1px 29px 7px rgba(65,15,248,.4);
+    transition: transform .5s ease;
+}
+
+.bx-shadow:hover {
+    /* box-shadow: 10px -20px 29px 7px rgba(65,15,248,.4); */
+    transform: scale(1.2);
+}
+
+.bg-purple {
+    background-color: #410FF8;
+}
+
+
+.text-white {
+    color: white;
 }
 
 

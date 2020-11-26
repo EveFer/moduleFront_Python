@@ -1,0 +1,38 @@
+
+.section {
+    border: $border;
+    height: 200px;
+
+    .form-login {
+        border: $border;
+        padding: 20px;
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.6);
+        width: 40%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        &.form-new {
+            background-color: $color-gray;
+        }
+
+        input {
+            height: 25px;
+            border-radius: 50px;
+            border: $border;
+            padding-left:10px;
+            margin: 10px 0;
+            @include tablet(){
+                display: none;
+            }
+        }
+
+        .btn {
+            @include styleButton();
+        }
+    }
+
+}
+.other-btn {
+    @include styleButton(rgba(0, 0, 255, 0.772));
+}

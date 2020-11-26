@@ -1,0 +1,17 @@
+@mixin styleButton($bg-color:rgba(0, 0, 255, 0.347), $height:25px) {
+    height: $height;
+    border: none;
+    background-color: $bg-color;
+    color: $color-white;
+    border-radius: 50px;
+    &:hover {
+        background-color: $color-red;
+        color: $color-white;
+    }
+}
+
+@mixin tablet() {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
