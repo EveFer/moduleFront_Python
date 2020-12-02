@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+header {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */
