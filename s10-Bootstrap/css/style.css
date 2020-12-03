@@ -1,0 +1,14 @@
+.btn-primary {
+  background-color: cyan;
+  color: black;
+}
+
+.btn-primary:hover {
+  background-color: yellowgreen;
+  color: black;
+}
+
+.my-class {
+  text-shadow: 1px 3px rgba(0, 0, 0, 0.8);
+}
+/*# sourceMappingURL=style.css.map */
