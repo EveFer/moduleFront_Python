@@ -1,0 +1,67 @@
+h2 {
+    color: green;
+    /* font-size: 50px; */
+}
+
+h2 {
+    color: #808080;
+}
+
+* {
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+   color: blue;
+}
+
+section.cards-information {
+    background-color: pink;
+}
+
+/* .cards-information {
+    background-color: rgba(0,0,0,0.3);
+} */
+
+#main {
+    background-color: red;
+}
+/* 
+ Selectores: 
+
+ Básicos: 
+
+ Universal --> *
+ tagname --> por tags de los elementos de HTML
+ class --> 
+ id --> 
+
+ Selectores Avanzados
+*/
+
+/* Descendiente */
+
+/* a que elemento quiero llegar */
+section.cards-information article.card p {
+    background-color: cyan;
+} 
+
+header.introduction nav ul li a {
+    background-color: red;
+}
+
+ul li a {
+    color: peru;
+}
+
+section.cards-information  {
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.cards-information article {
+    margin: 10px 0;
+    border: 1px solid purple;
+    width: 300px;
+}
